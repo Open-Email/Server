@@ -1,0 +1,27 @@
+package consts
+
+import (
+	"time"
+)
+
+const MAX_PROFILE_SIZE = 65536
+const MAX_PROFILE_IMAGE_SIZE = 524288
+const MAX_NOTIFICATION_SIZE = 1024
+
+const AUTHORIZATION_HEADER_NONCE = "Authorization"
+const NOTIFICATION_ORIGIN_HEADER = "Notifier-Encrypted"
+
+const MAX_NOTIFICATION_TIME = time.Hour * 24 * 14
+
+const MAX_CACHE_DURATION = 600
+
+const DEFAULT_MAX_HEADERS_SIZE = 512 * 1024         // 512 KB
+const DEFAULT_MAX_CONTENT_SIZE = 1024 * 1024 * 1024 // 1GB
+const MAX_HOME_DIR_SIZE = 2 * DEFAULT_MAX_CONTENT_SIZE
+
+const MESSAGE_DIR_ENVELOPE_FILE_NAME = "envelope"
+const MESSAGE_DIR_PAYLOAD_FILE_NAME = "payload"
+
+const PRIVATE_API_PATH_PREFIX = "home"
+const PUBLIC_API_PATH_PREFIX = "mail"
+const PRIVATE_PROVISION_PATH_PREFIX = "account"
